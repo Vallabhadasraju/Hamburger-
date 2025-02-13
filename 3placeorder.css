@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:"Poppins", sans-serif;
+    background-color:#fafafa ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.container {
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 10px #666;
+  background-color: #ededed;
+  z-index: 100;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 20%;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 900;
+  color: #f83b3b;
+  font-family: "Berkshire Swash", cursive;
+  cursor: pointer;
+}
+
+  .menu-box {
+    width: 75%;
+    margin-top: 2px;
+    padding-bottom: 2px;
+  }
+  
+  .menu-box ul {
+    float: right;
+  }
+  
+  .menu-box ul li {
+    display: inline-block;
+  }
+  
+  .menu-box ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 24px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .menu-box .active {
+    color: #f83b3b;
+  }
+  .container1 {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 100px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .order-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .customer-details, .product-selection, .order-summary {
+    margin-bottom: 20px;
+  }
+  .order-summary{
+    color: #555;
+  }
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  .customer-details h2{
+    padding-bottom: 25px;
+  }
+  input[type="text"], input[type="email"], textarea {
+    background: transparent;
+    color: #333;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  input[type="text"]:hover, input[type="email"]:hover, textarea:hover{
+    border: 2px solid #444;
+  }
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .product {
+    margin-bottom: 10px;
+  }
+  
+  button.submit-btn {
+    background-color: #218838;
+    color: white;
+    padding: 12px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #217838;
+  }
+  .button{
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  button.cancel-btn {
+    background-color: #f83b3b ;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.cancel-btn:hover {
+    background-color:#e83b3b;
+  }
+  #total-price {
+    font-weight: bold;
+    color: #28a745;
+  }
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer h1 {
+    color: #f83b3b;
+    font-family: "Berkshire Swash", cursive;
+  }
+  footer span {
+    color: #666;
+  }
+  footer p {
+    color: #888;
+    margin: 13px;
+  }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburger World</title>
+    <link rel="shortcut icon" href="images/main/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="1hamburger.css" />
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            padding-top: 120px;
+        }
+
+        aside {
+            margin-left: 15px;
+        }
+
+        .dropdown {
+            display: none;
+            /* Initially hide the dropdown */
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            opacity: 0; /* Start with opacity 0 */
+            transform: translateY(-10px); /* Start slightly above */
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for opacity and transform */
+        }
+
+        .read-more:hover + .dropdown {
+            display: block;
+            opacity: 1; /* Fade in */
+            position: sticky;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .item:hover {
+            background-color: #f0f0f0;
+        }
+
+        .blog-posts {
+            flex: 3;
+        }
+
+        .post {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .list {
+            padding: 10px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .read-more:hover {
+            background-color: #FF4F00;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="images/main/logo.png" alt=""> <span>Hamburger</span>
+                </div>
+                <nav class="menu-box">
+                    <ul>
+                        <li><a href="1hamburger.html">Home</a></li>
+                        <li><a href="2order.html">Foods</a></li>
+                        <li><a href="4blog.html">Blog</a></li>
+                        <li><a href="1hamburger.html#about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <article class="post">
+                <h2>10 Mouth-Watering Burger Recipes to Try at Home</h2>
+                <h4>Delicious Burger</h4>
+                <p>Discover our top 10 burger recipes that will make your taste buds dance! From classic cheeseburgers
+                    to gourmet creations, we have something for everyone.</p>
+                <a href="#" class="read-more">Look out Here!</a>
+                <div class="dropdown">
+                    <div class="grid">
+                        <div class="item">Classic Cheeseburger</div>
+                        <div class="item">Bacon Burger</div>
+                        <div class="item">Mushroom Swiss Burger</div>
+                        <div class="item">BBQ Burger</div>
+                        <div class="item">Veggie Burger</div>
+                        <div class="item">Spicy Jalapeño Burger</div>
+                        <div class="item">Blue Cheese Burger</div>
+                        <div class="item">Hawaiian Burger</div>
+                        <div class="item">Pesto Chicken Burger</div>
+                        <div class="item">Buffalo Chicken Burger</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>The History of the Hamburger: From Invention to Icon</h2>
+                <h4>History of Hamburger</h4>
+                <p>Welcome and Join us on a journey through time as we explore the fascinating history of the hamburger
+                    and how it became a global sensation.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="dropdown">
+                    <p>The hamburger, a quintessential American food, has a rich history that spans continents and centuries. Its evolution from a simple meat patty to a global icon reflects changes in culture, technology, and consumer preferences. Here’s a look at the journey of the hamburger from its origins to its status as a beloved staple.</p>
+                    <br><p>The hamburger's journey from a simple meat patty to a global icon reflects broader social, economic, and cultural changes. Today, it stands as a symbol of American cuisine while also adapting to modern tastes and dietary preferences. Whether enjoyed at a backyard barbecue, a fast-food joint, or a gourmet restaurant, the hamburger continues to evolve, proving its enduring appeal across generations and cultures.</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>5 Tips for Grilling the Perfect Burger</h2>
+                <h4>Grilling Burgers</h4>
+                <p>Wonder makes Grilling burgers can be an art. Here are five essential tips to ensure your burgers are
+                    juicy, flavorful, and cooked to perfection.</p>
+                <a href="#" class="read-more">Read More</a>
+                <div class="dropdown">
+                    <p>1. Choose the Right Meat <br>
+                        2. Form the Patties Properly <br>
+                        3. Season Generously <br>
+                        4. Preheat and Control the Grill <br>
+                        5. Know When to Take Them Off</p>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>About Us</h3>
+            <p>At Burger Haven, we are passionate about burgers! Join us as we share recipes, tips, and the latest news
+                in the burger world.</p>
+
+            <h3>Follow Us</h3>
+            <ul class="list">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </aside>
+    </main><section class="delivery-section">
+        <div class="container">
+            <div class="delivery-wrap half-width">
+
+                <div class="delivery-box">
+                    <img src="images/main//easy-order.jpg" alt="">
+                    <h2>Easy To Order</h2>
+                </div>
+                <div class="delivery-box">
+                    <img src="images/main/fdelivery.jpg" alt="">
+                    <h2>Fastest Delivery</h2>
+                </div>
+                <div class="delivery-box">
+                    <img src="images/main/quality.jpg" alt="">
+                    <h2>Best Quality</h2>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer>
+        <h1>Hamburger <span>World</span></h1>
+        <p>Eat healthy to live healthy. Live healthy to live happy.</p>
+        <span> &copy; 2024 All Rights Reserved By Hamburger</span>
+    </footer>
+</body>
+
+</html>

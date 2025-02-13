@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Grilled Turkey Supreme</title>
+    <link rel="shortcut icon" href="images/main/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="2order.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin-top: -20px;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .container1 {
+            max-width: 800px;
+            margin: 20px 350px;
+            padding: 20px;
+            padding-top: 80px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #555;
+        }
+
+        .burger-image {
+            width: 50%;
+            height: 300px;
+            border-radius: 8px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1s forwards;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .description {
+            margin: 20px 0;
+
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e74c3c;
+        }
+
+        .quantity {
+            margin: 20px 0;
+        }
+
+        .ratings {
+            margin: 20px 0;
+        }
+
+        .btn-exp {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .btn-exp:hover {
+            background-color: #289745;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #333;
+            border-radius: 8px;
+        }
+
+        .feedback,
+        .contact {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="images/main/logo.png" alt=""> <span>Hamburger</span>
+                </div>
+                <nav class="menu-box">
+                    <ul>
+                        <li><a href="1hamburger.html">Home</a></li>
+                        <li><a href="2order.html">Foods</a></li>
+                        <li><a href="4blog.html">Blog</a></li>
+                        <li><a href="1hamburger.html#about">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container1">
+        <h1>Grilled Turkey Supreme</h1>
+        <img src="images/order/turkey/GrilledTurkeySupreme.png" alt="Grilled Turkey Supreme" class="burger-image">
+
+        <div class="description">
+            <h2>Description</h2>
+            <p>This turkey burger is grilled to perfection, offering a charred exterior and tender, juicy interior. The grilled flavor adds an extra depth, making it a hearty choice for turkey enthusiasts.</p>
+        </div>
+
+        <div class="quantity">
+            <h2>Quantity</h2>
+            <input type="number" value="1" min="1" style="width: 50px;">
+        </div>
+
+        <div class="price">
+            <h2>Price: $8.49</h2>
+        </div>
+
+        <div class="ratings">
+            <h2>Ratings</h2>
+            <p>⭐⭐⭐⭐☆ (4.5/5 based on 200 reviews)</p>
+        </div>
+
+        <a href="3placeorder.html"><button class="btn-exp">Place
+            Order</button></a>
+    </div>
+
+    <footer class="footer">
+        <div class="feedback">
+            <h2>Feedback</h2>
+            <p>We value your feedback! Please let us know your thoughts.</p>
+            <textarea rows="4" cols="50" placeholder="Your feedback..."></textarea><br>
+            <a href="6submit.html"><button class="btn-exp" type="submit" style="font-size: medium;">Submit</button></a>
+        </div>
+    </footer>
+</body>
+</html>

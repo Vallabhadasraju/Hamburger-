@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks! for your Feedback</title>
+    <link rel="shortcut icon" href="images/main/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#f8f9fa;
+}
+
+  p {
+    color: #444;
+    line-height: 25px;
+  }
+  .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    position: fixed;
+    width:100%;
+    box-shadow:0 0 10px #666;
+    
+  }
+  header,
+  .intro-section {
+    background-color: #ededed;
+  }
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 20%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    width: 20%;
+    cursor: pointer;
+  }
+  .logo span {
+    font-size: 30px;
+    font-weight: 900;
+    color: #f83b3b;
+    font-family: "Berkshire Swash", cursive;
+    cursor: pointer;
+  }
+  .menu-box {
+    width: 75%;
+  }
+  .menu-box ul {
+    float: right;
+  }
+  .menu-box ul li {
+    display: inline-block;
+  }
+  .menu-box ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 26px 20px;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .menu-box .active {
+    color: #f83b3b;
+  }
+
+.image{
+  padding-top: 80px;
+  padding-left:560px ;
+
+}
+h4{
+  padding: 30px 65px ;
+  margin-bottom: -150px;
+}
+h4 a{
+  padding:0 5px ;
+}
+.zoom-image {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    animation: zoomInOut 1.5s infinite alternate; 
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 200px;
+  }
+  footer h1 {
+    color: #f83b3b;
+    font-family: "Berkshire Swash", cursive;
+  }
+  footer span {
+    color: #666;
+  }
+  footer p {
+    color: #888;
+    margin: 13px;
+  }
+</style>
+<body>
+  <header>
+    <div class="container">
+        <div class="header-wrap">
+            <div class="logo">
+                <img src="images/main/logo.png" alt=""> <span>Hamburger</span>
+            </div>
+            <nav class="menu-box">
+                <ul>
+                    <li><a href="1hamburger.html">Home</a></li>
+                    <li><a href="2order.html">Foods</a></li>
+                    <li><a href="4blog.html">Blog</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <div class="image-container">
+        <div class="image">
+        <img src="images/succesful/success.png" alt="Sample Image" class="zoom-image">
+        <h4>Thank You for Your Feedback! <a href="1hamburger.html">Home</a></h4>
+
+      </div>
+      </div>
+    <footer>
+      <h1>Hamburger <span>World</span></h1>
+      <p>Eat healthy to live healthy. Live healthy to live happy.</p>
+      <span class="copy"> &copy; 2024 All Rights Reserved By Hamburger</span>
+  </footer>
+</body>
+</html>
